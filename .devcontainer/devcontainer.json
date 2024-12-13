@@ -1,0 +1,14 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/terraform:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.sendKeybindingsToShell": true
+      }
+    }
+  },
+  "postAttachCommand": "unset GITHUB_TOKEN && gh auth login"
+}
